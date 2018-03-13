@@ -1,8 +1,25 @@
 {
-  "name": "IonicTestApp",
+  "name": "onsitextest",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": {
+    "name": "Michael Bates",
+    "email": "hachero@gmail.com",
+    "url": "https://www.sesaonsite.com"
+  },
+  "contributors": [
+    {
+      "name": "Michael Bates",
+      "email": "hachero@gmail.com",
+      "url": "https://www.sesaonsite.com"
+    },
+    {
+      "name": "David Sargeant",
+      "email": "starmobiledevelopers@gmail.com",
+      "url": "https://www.starmobiledevelopers.com"
+    }
+  ],
+  "description": "OnSiteX: PouchDB Angular NodeJS Ionic CouchDB: a 'PANIC' Stack App",
+  "homepage": "https://sesafleetservices.com/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -24,6 +41,12 @@
     "@ionic-native/splash-screen": "4.4.0",
     "@ionic-native/status-bar": "4.4.0",
     "@ionic/storage": "2.1.3",
+    "cordova-android": "^7.1.0",
+    "cordova-plugin-device": "^2.0.1",
+    "cordova-plugin-ionic-keyboard": "^2.0.5",
+    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-whitelist": "^1.3.3",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
     "rxjs": "5.5.2",
@@ -34,5 +57,16 @@
     "@ionic/app-scripts": "3.1.8",
     "typescript": "2.4.2"
   },
-  "description": "An Ionic project"
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
 }
